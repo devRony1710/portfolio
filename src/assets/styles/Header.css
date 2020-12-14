@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   height: 70px;
   width: 100%;
-  background-color: #929aab;
+  background-color: #1b1b1b;
 }
 
 .container-img {
@@ -11,7 +11,7 @@
 }
 
 .container-img img {
-  margin: 0;
+  margin: 0;  
   object-fit: cover;
 }
 

@@ -4,7 +4,7 @@ import React from 'react';
 import '../assets/styles/Header.css'
 
 //img
-import Logo from '../assets/static/logoWhite.png'
+import Logo from '../assets/static/logoHeader.png'
 
 const Header = () => {
   return (

@@ -1,7 +1,7 @@
 .Header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 150px;
+  height: 70px;
   width: 100%;
   background-color: #929aab;
 }
@@ -12,8 +12,6 @@
 
 .container-img img {
   margin: 0;
-  height: 150px;
-  width: 200px;
   object-fit: cover;
 }
 
@@ -29,7 +27,7 @@
 
 .container-menu li {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 15px;
   margin-right: 35px;
   list-style: none;
 }

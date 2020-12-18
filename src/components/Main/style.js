@@ -32,7 +32,7 @@ export const Description = styled.h1`
   color: #ffffff;
 
   @media screen and (max-width: 700px) {
-    font-size: 30px;
+    font-size: 40px;
   }
 `;
 
@@ -45,6 +45,6 @@ export const MainImg = styled.img`
   height: auto;
   object-fit: cover;
   @media screen and (max-width: 700px) {
-    height: 250px;
+    height: 400px;
   }
 `;

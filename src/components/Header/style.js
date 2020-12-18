@@ -6,6 +6,9 @@ export const HeaderNav = styled.header`
   height: 70px;
   width: 100%;
   background: #132743;
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const ContainerImg = styled.div`
@@ -15,12 +18,19 @@ export const ContainerImg = styled.div`
 export const Img = styled.img`
   margin: 0;
   object-fit: cover;
-`
+  @media screen and (max-width: 700px) {
+    height: auto;
+  }
+`;
 
 export const ContainerMenu = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 `;
 
 export const ListMenu = styled.ul`

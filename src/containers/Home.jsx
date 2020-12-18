@@ -1,16 +1,18 @@
 import React from 'react'
 
 //styles
-import '../assets/styles/Home.css'
+import {GlobalStyle} from '../assets/styles/Home'
+
 
 //components 
-import Header from '../components/Header'
-import Main from '../components/Main'
+import {Header} from '../components/Header/index'
+import {Main} from '../components/Main'
 
 
 const Home = () => {
   return (
     <div>
+      <GlobalStyle />
       <Header />
       <Main />
     </div>

@@ -18,7 +18,7 @@ export const NavbarWrapper = styled.nav`
     position: initial;
     height: auto;
     justify-content: center;
-    background: #232323;
+    background: #111111;
   }
 
   a {

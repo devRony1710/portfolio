@@ -5,6 +5,6 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #232323;
+  background: #111111;
 `
 

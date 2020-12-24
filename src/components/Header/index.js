@@ -1,26 +1,28 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+//components
+import {Navbar} from '../Header/Navbar/index.js'
+import { MenuButton } from '../Header/MenuButton/index'
 
 //styles
-import {HeaderNav, ContainerImg, Img, ContainerMenu, ListMenu, MenuItem} from './style.js'
+import {HeaderWrapper} from './style.js'
 
 //img
 import Logo from '../../assets/static/logoHeader.png'
 
 export const Header = () => {
+  const [open, setOpen] = useState(false)
+
+  const handleClick = () => {
+    setOpen(!open)
+  }
+
   return (
-    <HeaderNav>
-      <ContainerImg>
-        <Img src={Logo} alt=""/>
-      </ContainerImg>
-      <ContainerMenu>
-        <ListMenu>
-          <MenuItem>About Me</MenuItem>
-          <MenuItem>Projects</MenuItem>
-          <MenuItem>Blog</MenuItem>
-          <MenuItem>Courses</MenuItem>
-        </ListMenu>
-      </ContainerMenu>
-    </HeaderNav>
+    <HeaderWrapper>
+      <img src = {Logo} alt='Logo'></img>
+      <Navbar open={open} />
+      <MenuButton open={open} handleClick={handleClick} />
+    </HeaderWrapper>
   );
 };
 

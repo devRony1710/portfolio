@@ -32,7 +32,7 @@ export const MainTitle = styled.p`
   text-align: center;
   text-transform: capitalize;
   @media screen and (max-width: 700px) {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 30px;
   }
 `

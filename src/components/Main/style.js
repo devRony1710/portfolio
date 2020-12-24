@@ -7,10 +7,11 @@ export const MainContainer = styled.div`
   background: #232323;
   height: 75vh;
   @media screen and (max-width: 700px) {
+    height: 100vh;
     width: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    background: #21c2f8;
+    background: #232323;
   }
 `;
 
@@ -19,6 +20,9 @@ export const MainDescription = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 700px) {
+    grid-row: 2
+  }
 `
 
 export const MainTitle = styled.p`
@@ -27,6 +31,10 @@ export const MainTitle = styled.p`
   margin-bottom: 60px;
   text-align: center;
   text-transform: capitalize;
+  @media screen and (max-width: 700px) {
+    font-size: 30px;
+    margin-top: 30px;
+  }
 `
 
 export const MainContainerImg = styled.div`

@@ -1,24 +1,24 @@
-import React from 'react'
+import React from 'react';
 
 //styles
-import {GlobalStyle} from '../assets/styles/Home'
+import { GlobalStyle } from '../assets/styles/Home';
 
-
-//components 
-import {Header} from '../components/Header/index'
-import {Main} from '../components/Main/index'
-import {About} from '../components/About/index'
-
+//components
+import { Header } from '../components/Header/index';
+import { Main } from '../components/Main/index';
+import { About } from '../components/About/index';
+import { Projects } from '../components/Projects/index';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <GlobalStyle />
       <Header />
       <Main />
       <About />
-    </div>
-  )
-}
+      <Projects />
+    </>
+  );
+};
 
 export default Home;

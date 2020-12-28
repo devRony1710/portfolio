@@ -8,6 +8,7 @@ import { Header } from '../components/Header/index';
 import { Main } from '../components/Main/index';
 import { About } from '../components/About/index';
 import { Projects } from '../components/Projects/index';
+import { Courses } from '../components/Courses/index';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Main />
       <About />
       <Projects />
+      <Courses />
     </>
   );
 };

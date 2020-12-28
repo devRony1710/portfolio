@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  height: 330px;
+  height: 250px;
   width: 90%;
   margin-top: 50px;
   border: 1px solid #c3c3c3;
@@ -30,9 +30,13 @@ export const CardDescription = styled.p`
 export const CardLink = styled.a`
   background: #394867;
   margin: 5px 20px;
-  border: 1px solid #000;
+  border: 0px solid #000;
   border-radius: 40px;
   color: #fff;
   text-decoration: none;
   padding: 10px;
+
+  &:hover {
+    background: #14274e;
+  }
 `;

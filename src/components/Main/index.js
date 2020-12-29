@@ -1,16 +1,7 @@
 import React from 'react';
 
 //styles
-import {
-  MainContainer,
-  MainDescription,
-  MainTitle,
-  MainContainerImg,
-  MainImg,
-} from './style.js';
-
-//img
-import mainImage from '../../assets/static/logoBlack.png';
+import { MainContainer, MainDescription, MainTitle } from './style.js';
 
 export const Main = () => {
   return (

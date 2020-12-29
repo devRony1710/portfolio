@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const CourseContainer = styled.div`
   display: flex;
   align-items: center;
+  height: auto;
   width: 70%;
   margin: 20px auto;
   border: 1px solid #000;
@@ -11,7 +12,6 @@ export const CourseContainer = styled.div`
   background: #fff;
 
   @media screen and (max-width: 700px) {
-    height: auto;
     flex-direction: column;
     width: 100%;
   }
@@ -25,18 +25,35 @@ export const CourseImg = styled.img`
   height: 200px;
   width: 30%;
   object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   @media screen and (max-width: 700px) {
     width: 100%;
     border-bottom: 3px solid #232323;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
   }
 `;
 
 export const CourseTitle = styled.h2`
-  margin: 20px;
+  margin: 20px 0;
   font-size: 20px;
 `;
 
 export const CourseDescription = styled.p`
   font-weight: bold;
-  margin: 15px;
+  margin: 15px 0;
+`;
+
+export const CourseLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+  border: 0px solid #000;
+  border-radius: 30px;
+  background: #394867;
+  padding: 7px;
+
+  &:hover {
+    background: #252b43;
+  }
 `;

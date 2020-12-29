@@ -1,10 +1,9 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
   height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111111;
-`
-
+  background: #051626;
+`;

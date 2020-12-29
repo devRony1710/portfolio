@@ -25,9 +25,9 @@ export const CourseImg = styled.img`
   height: 200px;
   width: 30%;
   object-fit: cover;
-  border-bottom: 3px solid #232323;
   @media screen and (max-width: 700px) {
     width: 100%;
+    border-bottom: 3px solid #232323;
   }
 `;
 

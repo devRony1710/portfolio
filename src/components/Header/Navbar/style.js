@@ -1,11 +1,11 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const NavbarWrapper = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: #232323;
+  background: #051626;
   position: fixed;
   top: 10vh;
   right: ${(props) => (props.open ? '0' : '-100%')};
@@ -17,8 +17,8 @@ export const NavbarWrapper = styled.nav`
     flex-direction: row;
     position: initial;
     height: auto;
-    justify-content: center;
-    background: #111111;
+    justify-content: flex-end;
+    background: #051626;
   }
 
   a {

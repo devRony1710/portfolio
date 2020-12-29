@@ -13,7 +13,7 @@ import {
 import Me from '../../assets/static/me2.png';
 
 export const About = () => (
-  <AboutContainer>
+  <AboutContainer id="About">
     <AboutContainerImg>
       <AboutImg src={Me} />
     </AboutContainerImg>

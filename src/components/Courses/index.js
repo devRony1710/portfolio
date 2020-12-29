@@ -6,7 +6,7 @@ import defaultImage from '../../assets/static/logoBlack.png';
 
 export const Courses = () => {
   return (
-    <CourseMainContainer>
+    <CourseMainContainer id="Courses">
       <SectionTitle>Courses</SectionTitle>
       <CourseItem
         cover={defaultImage}

@@ -1,13 +1,13 @@
-import React from 'react'
-import {NavbarWrapper} from './style'
+import React from 'react';
+import { NavbarWrapper } from './style';
 
-export const Navbar = ({open}) => {
+export const Navbar = ({ open }) => {
   return (
     <NavbarWrapper open={open}>
-      <a href='/'>About Me</a>
-      <a href='/'>Projects</a>
-      <a href='/'>Courses</a>
-      <a href='/'>Blog</a>
+      <a href="#About">About Me</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Courses">Courses</a>
+      <a href="#Blog">Blog</a>
     </NavbarWrapper>
-  )
-}
+  );
+};

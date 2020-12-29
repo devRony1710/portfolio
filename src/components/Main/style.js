@@ -25,8 +25,8 @@ export const MainDescription = styled.div`
 `;
 
 export const MainTitle = styled.p`
-  font-size: 40px;
-  color: #000;
+  font-size: 50px;
+  color: #051626;
   margin-bottom: 60px;
   text-align: center;
   text-transform: capitalize;

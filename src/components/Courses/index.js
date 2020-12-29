@@ -3,7 +3,7 @@ import React from 'react';
 import { CourseItem } from './CoursesItems/index';
 import { CourseMainContainer, SectionTitle } from './style';
 
-import CoverJs from '../../assets/static/JS.png';
+import coverJs from '../../assets/static/JS.png';
 import coverReact from '../../assets/static/React.png';
 
 export const Courses = () => {
@@ -11,13 +11,13 @@ export const Courses = () => {
     <CourseMainContainer id="Courses">
       <SectionTitle>Courses</SectionTitle>
       <CourseItem
-        cover={CoverJs}
+        cover={coverJs}
         title="Curso de Fundamentos de JS"
         description="Este curso fue el primero con el que conocí el lenguaje de programación JavaScript, Logre adquirir las bases necesarias para poder implementar interactividad en mis futuros proyectos"
         link="https://platzi.com/p/ronyaab1710/curso/1339-fundamentos-javascript/diploma/detalle/"
       />
       <CourseItem
-        cover={CoverJs}
+        cover={coverJs}
         title="Curso Profesional de JS"
         description="Luego de obtener las bases del lenguaje JavaScript, seguí profundizando en temas más avanzados y en carácteristicas especiales sobre este lenguaje, el curso profesional de JavaScript me ayudo a cumplir dicho objetivo"
         link="https://platzi.com/p/ronyaab1710/curso/1642-javascript-profesional/diploma/detalle/"

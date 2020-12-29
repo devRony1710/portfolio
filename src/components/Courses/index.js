@@ -2,6 +2,7 @@ import React from 'react';
 
 import { CourseItem } from './CoursesItems/index';
 import { CourseMainContainer, SectionTitle } from './style';
+
 import CoverJs from '../../assets/static/JS.png';
 import coverReact from '../../assets/static/React.png';
 

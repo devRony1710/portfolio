@@ -3,43 +3,36 @@ import React from 'react';
 import { CourseItem } from './CoursesItems/index';
 import { CourseMainContainer, SectionTitle } from './style';
 
-import coverJs from '../../assets/static/JS.png';
-import coverReact from '../../assets/static/React.png';
+import Carousel from 'react-elastic-carousel';
 
 export const Courses = () => {
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 1, itemsToScroll: 1 },
+    { width: 768, itemsToShow: 1 },
+    { width: 1200, itemsToShow: 1 },
+  ];
+
+  const Covers = {
+    algoritmos:
+      'https://res.cloudinary.com/dgthnv9ab/image/upload/v1610690179/Screenshot_from_2021-01-15_00-56-01_rtrgiy.png',
+    practicoreactjs:
+      'https://res.cloudinary.com/dgthnv9ab/image/upload/v1610691010/Screenshot_from_2021-01-15_01-09-55_g7in2h.png',
+    desarrolloWeb:
+      'https://res.cloudinary.com/dgthnv9ab/image/upload/v1610691131/Screenshot_from_2021-01-15_01-11-56_rqinrg.png',
+    frontend:
+      'https://res.cloudinary.com/dgthnv9ab/image/upload/v1610691496/Screenshot_from_2021-01-15_01-18-04_zhkzpz.png',
+  };
+
   return (
-    <CourseMainContainer id="Courses">
+    <CourseMainContainer>
       <SectionTitle>Courses</SectionTitle>
-      <CourseItem
-        cover={coverJs}
-        title="Curso de Fundamentos de JS"
-        description="Este curso fue el primero con el que conocí el lenguaje de programación JavaScript, Logre adquirir las bases necesarias para poder implementar interactividad en mis futuros proyectos"
-        link="https://platzi.com/p/ronyaab1710/curso/1339-fundamentos-javascript/diploma/detalle/"
-      />
-      <CourseItem
-        cover={coverJs}
-        title="Curso Profesional de JS"
-        description="Luego de obtener las bases del lenguaje JavaScript, seguí profundizando en temas más avanzados y en carácteristicas especiales sobre este lenguaje, el curso profesional de JavaScript me ayudo a cumplir dicho objetivo"
-        link="https://platzi.com/p/ronyaab1710/curso/1642-javascript-profesional/diploma/detalle/"
-      />
-      <CourseItem
-        cover={coverReact}
-        title="Curso de ReactJs"
-        description="Con el enfoque de convertirme en desarrollador FrontEnd continue mis estudios con el curso de React Js, para poner en practica todos mis conocimientos previos a través de esta Librería"
-        link="/"
-      />
-      <CourseItem
-        cover={coverReact}
-        title="Curso Practico de ReactJs"
-        description="Una vez me abrí paso para iniciar en el mundo de ReactJs, decidí enfrentar un reto más completo, el curso Practico de React Js fue el impulsor de este objetivo, el cual sería terminar platzi video, Un proyecto de la Escula de Js de platzi que cuenta con su respectivo FrontEnd y Backend"
-        link="https://platzi.com/p/ronyaab1710/curso/1651-course/diploma/detalle/"
-      />
-      <CourseItem
-        cover={coverReact}
-        title="Curso de React Router y Redux"
-        description="React Router y Redux fue un gran paso en mi carrera como Dev, adquiriendo nuevos conocimientos e implementando el manejo de herramientas que mejoraran la performance de mis futuros proyectos"
-        link="https://platzi.com/p/ronyaab1710/curso/1652-course/diploma/detalle/"
-      />
+      <Carousel breakPoints={breakPoints}>
+        <CourseItem cover={Covers.algoritmos} />
+        <CourseItem cover={Covers.practicoreactjs} />
+        <CourseItem cover={Covers.desarrolloWeb} />
+        <CourseItem cover={Covers.frontend} />
+      </Carousel>
     </CourseMainContainer>
   );
 };

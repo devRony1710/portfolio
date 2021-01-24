@@ -55,10 +55,12 @@ export const Courses = () => {
       'https://res.cloudinary.com/dgthnv9ab/image/upload/v1610772856/Screenshot_from_2021-01-15_23-52-23_nnwer6.png',
     scrum:
       'https://res.cloudinary.com/dgthnv9ab/image/upload/v1610772857/Screenshot_from_2021-01-15_23-53-00_ylbry1.png',
+    reactAvanzado:
+      'https://res.cloudinary.com/dgthnv9ab/image/upload/v1611442872/Screenshot_from_2021-01-23_17-56-13_hukyrj.png',
   };
 
   return (
-    <CourseMainContainer>
+    <CourseMainContainer id="Courses">
       <SectionTitle>Courses</SectionTitle>
       <Carousel
         breakPoints={breakPoints}
@@ -77,6 +79,7 @@ export const Courses = () => {
         <CourseItem cover={Covers.practicoreactjs} />
         <CourseItem cover={Covers.router} />
         <CourseItem cover={Covers.scrum} />
+        <CourseItem cover={Covers.reactAvanzado} />
       </Carousel>
     </CourseMainContainer>
   );
